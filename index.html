@@ -4,7 +4,23 @@
     <meta charset="utf-8" />
     <title>Gatsby Plugin - Scroll Indicator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="src/style.css" />
+    <style>
+      body {
+        margin: auto;
+        font-size: 1.2rem;
+        font-family: 'Futura PT', -apple-system, BlinkMacSystemFont, Ubuntu,
+          sans-serif;
+        padding: 1rem 2rem;
+        position: relative;
+      }
+
+      @media (min-width: 600px) {
+        body {
+          width: 50%;
+          padding: 1rem 0;
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="indicator"></div>
@@ -110,6 +126,6 @@
     <p>
       Dummy copy courtesy of <a href="https://hipsum.co/">Hipster Ipsum</a> 😎
     </p>
-    <script src="src/script.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>

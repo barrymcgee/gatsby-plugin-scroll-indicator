@@ -22,4 +22,7 @@
     "url": "https://github.com/barrymcgee/gatsby-plugin-scroll-indicator/issues"
   },
   "homepage": "https://github.com/barrymcgee/gatsby-plugin-scroll-indicator#readme"
+  "devDependencies": {
+    "prettier": "1.16.4"
+  },
 }

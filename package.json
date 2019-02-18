@@ -21,8 +21,12 @@
   "bugs": {
     "url": "https://github.com/barrymcgee/gatsby-plugin-scroll-indicator/issues"
   },
-  "homepage": "https://github.com/barrymcgee/gatsby-plugin-scroll-indicator#readme"
+  "homepage": "https://github.com/barrymcgee/gatsby-plugin-scroll-indicator#readme",
   "devDependencies": {
     "prettier": "1.16.4"
   },
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "serve": "python -m SimpleHTTPServer 8001"
+  }
 }

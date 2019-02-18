@@ -1,44 +1,115 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Gatsby Plugin - Scroll Indicator</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-
-  </style>
-</head>
-<body>
-  <h1>Gatsby Plugin - Scroll Indicator</h1>
-  <p>Lorem ipsum dolor amet try-hard kogi pitchfork, celiac keffiyeh direct trade cold-pressed. Ugh selvage man bun yuccie,
-  kogi kitsch poke keytar. Tumblr kale chips chartreuse, artisan lyft chicharrones truffaut listicle hella banh mi tousled
-  lo-fi paleo meh. Leggings skateboard readymade butcher hashtag. Skateboard shabby chic meggings jianbing keffiyeh
-  church-key, pinterest vice celiac woke migas authentic letterpress. </p>
-
-  <p>Shoreditch enamel pin truffaut, woke direct trade wayfarers succulents butcher flexitarian. Tattooed jianbing heirloom
-  chia. Actually messenger bag PBR&B, vegan fingerstache fashion axe activated charcoal chartreuse narwhal small batch
-  williamsburg art party. Lumbersexual keffiyeh ennui, poke helvetica cardigan truffaut neutra austin. Selvage vaporware
-  schlitz tattooed copper mug truffaut gentrify echo park heirloom tote bag adaptogen raw denim live-edge brunch jean
-  shorts. Church-key pug slow-carb swag ugh freegan bicycle rights VHS paleo artisan occupy glossier.</p>
-
-  <p>Tousled vaporware normcore, helvetica sartorial cronut microdosing lyft venmo heirloom trust fund la croix. Lumbersexual
-  succulents tofu bespoke literally cray marfa kinfolk whatever chambray fam. Fam ennui thundercats hot chicken snackwave,
-  taiyaki ramps slow-carb mumblecore vinyl meggings messenger bag occupy la croix four loko. Live-edge cornhole ethical,
-  fashion axe pabst sartorial seitan locavore next level shaman typewriter messenger bag. Neutra single-origin coffee
-  aesthetic before they sold out YOLO chartreuse. Four loko bitters deep v, succulents flannel quinoa stumptown pok pok
-  poke gochujang wolf pour-over. Tilde offal gochujang brunch poke blue bottle.</p>
-
-  <p>Vegan viral skateboard, af copper mug fanny pack artisan jean shorts. Polaroid food truck intelligentsia, coloring book
-  wolf kickstarter shabby chic. Leggings intelligentsia literally, williamsburg retro freegan kitsch paleo live-edge.
-  Venmo blue bottle truffaut tbh biodiesel 3 wolf moon lyft lomo cray swag. Knausgaard stumptown af biodiesel. Disrupt
-  tote bag williamsburg palo santo YOLO, etsy austin tumeric.</p>
-
-  <p>Listicle venmo stumptown fanny pack hoodie photo booth. Cornhole helvetica lumbersexual, godard hell of cronut bespoke
-  health goth swag franzen vape stumptown deep v. Microdosing lyft scenester tacos, twee polaroid edison bulb enamel pin
-  bespoke pug art party readymade try-hard live-edge. Jianbing bicycle rights sartorial lumbersexual humblebrag brooklyn
-  heirloom offal four dollar toast raclette live-edge. Cloud bread literally plaid whatever live-edge occupy. Lo-fi
-  kinfolk mumblecore jianbing, celiac polaroid mustache hexagon subway tile iceland seitan PBR&B swag. Gentrify butcher
-  semiotics scenester sustainable roof party.</p>
-<script src="src/script.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Gatsby Plugin - Scroll Indicator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="src/style.css" />
+  </head>
+  <body>
+    <div id="indicator"></div>
+    <h1>Gatsby Plugin - Scroll Indicator</h1>
+    <p>
+      Lorem ipsum dolor amet try-hard kogi pitchfork, celiac keffiyeh direct
+      trade cold-pressed. Ugh selvage man bun yuccie, kogi kitsch poke keytar.
+      Tumblr kale chips chartreuse, artisan lyft chicharrones truffaut listicle
+      hella banh mi tousled lo-fi paleo meh. Leggings skateboard readymade
+      butcher hashtag. Skateboard shabby chic meggings jianbing keffiyeh
+      church-key, pinterest vice celiac woke migas authentic letterpress.
+    </p>
+    <p>
+      Shoreditch enamel pin truffaut, woke direct trade wayfarers succulents
+      butcher flexitarian. Tattooed jianbing heirloom chia. Actually messenger
+      bag PBR&B, vegan fingerstache fashion axe activated charcoal chartreuse
+      narwhal small batch williamsburg art party. Lumbersexual keffiyeh ennui,
+      poke helvetica cardigan truffaut neutra austin. Selvage vaporware schlitz
+      tattooed copper mug truffaut gentrify echo park heirloom tote bag
+      adaptogen raw denim live-edge brunch jean shorts. Church-key pug slow-carb
+      swag ugh freegan bicycle rights VHS paleo artisan occupy glossier.
+    </p>
+    <p>
+      Tousled vaporware normcore, helvetica sartorial cronut microdosing lyft
+      venmo heirloom trust fund la croix. Lumbersexual succulents tofu bespoke
+      literally cray marfa kinfolk whatever chambray fam. Fam ennui thundercats
+      hot chicken snackwave, taiyaki ramps slow-carb mumblecore vinyl meggings
+      messenger bag occupy la croix four loko. Live-edge cornhole ethical,
+      fashion axe pabst sartorial seitan locavore next level shaman typewriter
+      messenger bag. Neutra single-origin coffee aesthetic before they sold out
+      YOLO chartreuse. Four loko bitters deep v, succulents flannel quinoa
+      stumptown pok pok poke gochujang wolf pour-over. Tilde offal gochujang
+      brunch poke blue bottle.
+    </p>
+    <p>
+      Vegan viral skateboard, af copper mug fanny pack artisan jean shorts.
+      Polaroid food truck intelligentsia, coloring book wolf kickstarter shabby
+      chic. Leggings intelligentsia literally, williamsburg retro freegan kitsch
+      paleo live-edge. Venmo blue bottle truffaut tbh biodiesel 3 wolf moon lyft
+      lomo cray swag. Knausgaard stumptown af biodiesel. Disrupt tote bag
+      williamsburg palo santo YOLO, etsy austin tumeric.
+    </p>
+    <p>
+      Listicle venmo stumptown fanny pack hoodie photo booth. Cornhole helvetica
+      lumbersexual, godard hell of cronut bespoke health goth swag franzen vape
+      stumptown deep v. Microdosing lyft scenester tacos, twee polaroid edison
+      bulb enamel pin bespoke pug art party readymade try-hard live-edge.
+      Jianbing bicycle rights sartorial lumbersexual humblebrag brooklyn
+      heirloom offal four dollar toast raclette live-edge. Cloud bread literally
+      plaid whatever live-edge occupy. Lo-fi kinfolk mumblecore jianbing, celiac
+      polaroid mustache hexagon subway tile iceland seitan PBR&B swag. Gentrify
+      butcher semiotics scenester sustainable roof party.
+    </p>
+    <p>
+      Lorem ipsum dolor amet try-hard kogi pitchfork, celiac keffiyeh direct
+      trade cold-pressed. Ugh selvage man bun yuccie, kogi kitsch poke keytar.
+      Tumblr kale chips chartreuse, artisan lyft chicharrones truffaut listicle
+      hella banh mi tousled lo-fi paleo meh. Leggings skateboard readymade
+      butcher hashtag. Skateboard shabby chic meggings jianbing keffiyeh
+      church-key, pinterest vice celiac woke migas authentic letterpress.
+    </p>
+    <p>
+      Shoreditch enamel pin truffaut, woke direct trade wayfarers succulents
+      butcher flexitarian. Tattooed jianbing heirloom chia. Actually messenger
+      bag PBR&B, vegan fingerstache fashion axe activated charcoal chartreuse
+      narwhal small batch williamsburg art party. Lumbersexual keffiyeh ennui,
+      poke helvetica cardigan truffaut neutra austin. Selvage vaporware schlitz
+      tattooed copper mug truffaut gentrify echo park heirloom tote bag
+      adaptogen raw denim live-edge brunch jean shorts. Church-key pug slow-carb
+      swag ugh freegan bicycle rights VHS paleo artisan occupy glossier.
+    </p>
+    <p>
+      Tousled vaporware normcore, helvetica sartorial cronut microdosing lyft
+      venmo heirloom trust fund la croix. Lumbersexual succulents tofu bespoke
+      literally cray marfa kinfolk whatever chambray fam. Fam ennui thundercats
+      hot chicken snackwave, taiyaki ramps slow-carb mumblecore vinyl meggings
+      messenger bag occupy la croix four loko. Live-edge cornhole ethical,
+      fashion axe pabst sartorial seitan locavore next level shaman typewriter
+      messenger bag. Neutra single-origin coffee aesthetic before they sold out
+      YOLO chartreuse. Four loko bitters deep v, succulents flannel quinoa
+      stumptown pok pok poke gochujang wolf pour-over. Tilde offal gochujang
+      brunch poke blue bottle.
+    </p>
+    <p>
+      Vegan viral skateboard, af copper mug fanny pack artisan jean shorts.
+      Polaroid food truck intelligentsia, coloring book wolf kickstarter shabby
+      chic. Leggings intelligentsia literally, williamsburg retro freegan kitsch
+      paleo live-edge. Venmo blue bottle truffaut tbh biodiesel 3 wolf moon lyft
+      lomo cray swag. Knausgaard stumptown af biodiesel. Disrupt tote bag
+      williamsburg palo santo YOLO, etsy austin tumeric.
+    </p>
+    <p>
+      Listicle venmo stumptown fanny pack hoodie photo booth. Cornhole helvetica
+      lumbersexual, godard hell of cronut bespoke health goth swag franzen vape
+      stumptown deep v. Microdosing lyft scenester tacos, twee polaroid edison
+      bulb enamel pin bespoke pug art party readymade try-hard live-edge.
+      Jianbing bicycle rights sartorial lumbersexual humblebrag brooklyn
+      heirloom offal four dollar toast raclette live-edge. Cloud bread literally
+      plaid whatever live-edge occupy. Lo-fi kinfolk mumblecore jianbing, celiac
+      polaroid mustache hexagon subway tile iceland seitan PBR&B swag. Gentrify
+      butcher semiotics scenester sustainable roof party.
+    </p>
+    <p>
+      Dummy copy courtesy of <a href="https://hipsum.co/">Hipster Ipsum</a> 😎
+    </p>
+    <script src="src/script.js"></script>
+  </body>
 </html>

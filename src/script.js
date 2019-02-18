@@ -23,7 +23,10 @@
     if (!scrolling) {
       window.requestAnimationFrame(function() {
         let indicatorWidth = getPercentage(currentPos, scrollDistance);
-        indicator.setAttribute('style', `width: ${indicatorWidth}%`);
+        indicator.setAttribute(
+          'style',
+          `width: ${indicatorWidth}%;position: fixed;height: 3px;background-color: #663399;top: 0;left: 0;`
+        );
         scrolling = false;
       });
       scrolling = true;

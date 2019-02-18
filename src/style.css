@@ -16,11 +16,3 @@ body {
     padding: 1rem 0;
   }
 }
-
-#indicator {
-  position: fixed;
-  height: 3px;
-  background-color: rgb(102, 51, 153);
-  top: 0;
-  left: 0;
-}

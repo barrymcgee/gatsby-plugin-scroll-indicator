@@ -1,0 +1,25 @@
+{
+  "name": "gatsby-plugin-scroll-indicator",
+  "version": "1.0.0",
+  "description": "A visual indicator of page scroll",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barrymcgee/gatsby-plugin-scroll-indicator.git"
+  },
+  "keywords": [
+    "gatsby",
+    "plugin",
+    "scroll",
+    "indicator"
+  ],
+  "author": "Barry McGee <barry.mcgee@integralcode.co.uk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barrymcgee/gatsby-plugin-scroll-indicator/issues"
+  },
+  "homepage": "https://github.com/barrymcgee/gatsby-plugin-scroll-indicator#readme"
+}

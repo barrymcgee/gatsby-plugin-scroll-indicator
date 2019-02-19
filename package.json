@@ -3,11 +3,11 @@
   "version": "0.0.5",
   "description": "A visual indicator of page scroll",
   "keywords": [
+    "gatsby",
+    "gatsby-plugin",
     "indicator",
     "plugin",
-    "scroll",
-    "gatsby",
-    "gatsby-plugin"
+    "scroll"
   ],
   "homepage": "https://github.com/barrymcgee/gatsby-plugin-scroll-indicator#readme",
   "bugs": {
@@ -21,10 +21,10 @@
   "author": "Barry McGee <barry.mcgee@integralcode.co.uk>",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir . --ignore **/__tests__",
+    "build": "babel src --out-dir .",
     "clean": "rm -rf node_modules",
-    "serve": "python -m SimpleHTTPServer 8001 && npm run watch",
-    "watch": "babel -w src --out-dir . --ignore **/__tests__"
+    "deploy": "npm run build && npm deploy",
+    "watch": "babel -w src --out-dir ."
   },
   "dependencies": {
     "@babel/runtime": "7.3.1"

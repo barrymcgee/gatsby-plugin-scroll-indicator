@@ -8,11 +8,11 @@ exports.onClientEntry = (a, pluginOptions = {}) => {
 
   // Create indicator container and append to document body
   const node = document.createElement(`div`);
-  node.id = `indicator`;
+  node.id = `gatsby-plugin-scroll-indicator`;
   document.body.appendChild(node);
 
   let scrolling = false;
-  const indicator = document.getElementById('indicator');
+  const indicator = document.getElementById('gatsby-plugin-scroll-indicator');
 
   // Determine width of scroll indicator
   const getIndicatorPercentageWidth = (currentPos, totalScroll) => {

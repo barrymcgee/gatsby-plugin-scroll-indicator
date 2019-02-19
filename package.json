@@ -5,7 +5,9 @@
   "keywords": [
     "indicator",
     "plugin",
-    "scroll"
+    "scroll",
+    "gatsby",
+    "gatsby-plugin"
   ],
   "homepage": "https://github.com/barrymcgee/gatsby-plugin-scroll-indicator#readme",
   "bugs": {

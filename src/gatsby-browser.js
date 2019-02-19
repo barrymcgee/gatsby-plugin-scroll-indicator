@@ -1,6 +1,6 @@
 const defaultOptions = { color: `#663391` };
 
-exports.onClientEntry = (pluginOptions = {}) => {
+exports.onClientEntry = (a, pluginOptions = {}) => {
   // Merge default options with user defined options in `gatsby-config.js`
   const options = { ...defaultOptions, ...pluginOptions };
 

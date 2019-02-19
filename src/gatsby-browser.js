@@ -4,8 +4,6 @@ exports.onClientEntry = (a, pluginOptions = {}) => {
   // Merge default options with user defined options in `gatsby-config.js`
   const options = { ...defaultOptions, ...pluginOptions };
 
-  console.log(pluginOptions);
-
   // Create indicator container and append to document body
   const node = document.createElement(`div`);
   node.id = `gatsby-plugin-scroll-indicator`;

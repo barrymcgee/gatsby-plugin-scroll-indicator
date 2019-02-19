@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-scroll-indicator",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A visual indicator of page scroll",
   "keywords": [
     "indicator",

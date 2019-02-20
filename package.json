@@ -23,7 +23,7 @@
   "scripts": {
     "build": "babel src --out-dir .",
     "clean": "rm -rf node_modules",
-    "deploy": "npm run build && npm deploy",
+    "prepare": "npm run build",
     "watch": "babel -w src --out-dir ."
   },
   "dependencies": {

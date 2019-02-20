@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+<a name="0.0.6"></a>
+
+## [0.0.6]() (2019-02-19)
+
+**Note:**
+[fix] Amend div id to match plugin name to decrease risk of conflicts
+
 <a name="0.0.5"></a>
 
 ## [0.0.5]() (2019-02-19)

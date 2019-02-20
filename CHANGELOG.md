@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+<a name="0.0.7"></a>
+
+## [0.0.7]() (2019-02-20)
+
+**Note:**
+[feat] Added CSS transition to width of indicator progress bar to make it smoother
+
 <a name="0.0.6"></a>
 
 ## [0.0.6]() (2019-02-19)

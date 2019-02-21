@@ -24,7 +24,8 @@
     "build": "babel src --out-dir .",
     "clean": "rm -rf node_modules",
     "prepare": "npm run build",
-    "watch": "babel -w src --out-dir ."
+    "watch": "babel -w src --out-dir .",
+    "prettier-check": "prettier --check **/*.*"
   },
   "dependencies": {
     "@babel/runtime": "7.3.1"

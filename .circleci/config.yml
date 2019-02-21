@@ -10,7 +10,7 @@ defaults: &defaults
     - image: circleci/node:8.9.1
 
 jobs:
-  check-prettier:
+  prettier-check:
     <<: *defaults
     steps:
       - checkout
@@ -52,6 +52,7 @@ workflows:
   version: 2
   test-deploy:
     jobs:
+      - prettier-check
       - build
       - deploy:
           requires:

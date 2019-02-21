@@ -16,16 +16,24 @@ jobs:
       - attach_workspace:
           at: ~/repo
       - run:
+          name: Install deps
+          command: npm install
+      - run:
           name: Build assets
           command: npm build
   deploy:
     <<: *defaults
     steps:
-      - attach_workspace:
-          at: ~/repo
+      - checkout
+      - run:
+          name: Install deps
+          command: npm install
+      - run:
+          name: Build assets
+          command: npm build
       - run:
           name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - run:
           name: Publish package
           command: npm publish
@@ -39,7 +47,5 @@ workflows:
           requires:
             - build
           filters:
-            tags:
-              only: /^v.*/
             branches:
-              ignore: /.*/
+              only: master

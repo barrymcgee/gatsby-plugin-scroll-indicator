@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+<a name="0.0.8"></a>
+
+## [0.0.8]() (2019-02-21)
+
+**Note:**
+[fix] Added direct link to README gif
+
 <a name="0.0.7"></a>
 
 ## [0.0.7]() (2019-02-20)

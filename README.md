@@ -1,5 +1,7 @@
 # gatsby-plugin-scroll-indicator
 
+[![npm version](https://badge.fury.io/js/gatsby-plugin-scroll-indicator.svg)](https://badge.fury.io/js/gatsby-plugin-scroll-indicator)
+
 Easily add a page scroll indicator to your Gatsby site.
 
 A 3px high indicator bar will progress along the top of your viewport as you scroll down the page.

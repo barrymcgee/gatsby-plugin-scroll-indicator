@@ -1,6 +1,7 @@
 # gatsby-plugin-scroll-indicator
 
 [![npm version](https://badge.fury.io/js/gatsby-plugin-scroll-indicator.svg)](https://badge.fury.io/js/gatsby-plugin-scroll-indicator)
+[![CircleCI](https://circleci.com/gh/barrymcgee/gatsby-plugin-scroll-indicator/tree/develop.svg?style=svg)](https://circleci.com/gh/barrymcgee/gatsby-plugin-scroll-indicator/tree/develop)
 
 Easily add a page scroll indicator to your Gatsby site.
 

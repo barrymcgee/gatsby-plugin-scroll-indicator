@@ -7,19 +7,12 @@ exports.onClientEntry = (a, pluginOptions = {}) => {
     // Merge default options with user defined options in `gatsby-config.js`
     const options = { ...defaultOptions, ...pluginOptions };
 
-    console.log(options.paths);
-
-    console.log(multimatch(location.pathname, options.paths));
-
     // Check current path with specified paths in options
     const matchedPaths = multimatch(location.pathname, options.paths);
     // Return bool if paths match
     const enableScroller = matchedPaths.length > 0;
 
-    console.log(enableScroller);
-
     if (enableScroller) {
-      console.info('Scroll enabled 🔥');
       // Create indicator container and append to document body
       const node = document.createElement(`div`);
       node.id = `gatsby-plugin-scroll-indicator`;

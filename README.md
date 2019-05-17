@@ -13,11 +13,19 @@
 
 `npm install --save gatsby-plugin-scroll-indicator`
 
-## How to use
+## Quick start
+
+These options are not required. To have a Gatsby purple (`#663391`) scroll indicator on all of your pages, add the plugin to your plugins array in `gatsby-config.js`:
+
+```javascript
+  ...
+  plugins: [
+    `gatsby-plugin-scroll-indicator`
+  ]
+  ...
+```
 
 ## Options
-
-These options are not required. To have a Gatsby purple (#)the scroll indicator on all your pages
 
 ### color (String)
 
@@ -27,7 +35,7 @@ Any [hex color code](https://www.color-hex.com/) is valid.
 
 An array of [globbing patterns](http://www.globtester.com/) to specify where the scroll indicator should show.
 
-Omitting this option will mean the indicator will show for all paths.
+Note: By default, the indicator will show for all paths.
 
 ## Example
 

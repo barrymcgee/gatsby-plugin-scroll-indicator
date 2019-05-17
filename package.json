@@ -26,7 +26,7 @@
     "prepare": "npm run build",
     "watch": "babel -w src --out-dir .",
     "prettier-check": "prettier --check **/*.*",
-    "release": "release-it --dry-run"
+    "release": "release-it"
   },
   "dependencies": {
     "@babel/runtime": "7.4.4"

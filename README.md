@@ -3,7 +3,6 @@
 [![npm version](https://badge.fury.io/js/gatsby-plugin-scroll-indicator.svg)](https://badge.fury.io/js/gatsby-plugin-scroll-indicator)
 [![CircleCI](https://circleci.com/gh/barrymcgee/gatsby-plugin-scroll-indicator/tree/develop.svg?style=svg)](https://circleci.com/gh/barrymcgee/gatsby-plugin-scroll-indicator/tree/develop)
 
-
 - 🔥 Easily add a page scroll indicator to your Gatsby site.
 - 👨🏼‍💻A 3px high indicator bar will progress along the top of your viewport as you scroll down the page.
 - 🎨 The color is of the indicator bar is a configurable option.
@@ -16,15 +15,38 @@
 
 ## How to use
 
+## Options
+
+These options are not required. To have a Gatsby purple (#)the scroll indicator on all your pages
+
+### color (String)
+
+Any [hex color code](https://www.color-hex.com/) is valid.
+
+### paths (Array of globbing patterns)
+
+An array of [globbing patterns](http://www.globtester.com/) to specify where the scroll indicator should show.
+
+Omitting this option will mean the indicator will show for all paths.
+
+## Example
+
 ```javascript
-// In your gatsby-config.js
+// gatsby-config.js
 plugins: [
   {
     resolve: `gatsby-plugin-scroll-indicator`,
     options: {
-      // Configure your color here
+      // Configure color of the scroll indicator
       color: '#BADA55',
+      // Configure paths where the scroll indicator will appear
+      paths: ['/', '/blog/**'],
     },
   },
 ];
 ```
+
+### Useful links
+
+- Globbing patterns, explained - https://commandbox.ortusbooks.com/usage/parameters/globbing-patterns
+- Globtester - http://www.globtester.com/

@@ -25,13 +25,15 @@
     "clean": "rm -rf node_modules",
     "prepare": "npm run build",
     "watch": "babel -w src --out-dir .",
-    "prettier-check": "prettier --check **/*.*"
+    "prettier-check": "prettier --check **/*.*",
+    "release": "release-it --dry-run"
   },
   "dependencies": {
     "@babel/runtime": "7.4.4"
   },
   "devDependencies": {
     "@babel/cli": "7.4.4",
+    "release-it": "^12.2.0",
     "@babel/core": "7.4.4",
     "babel-preset-gatsby-package": "0.1.4",
     "husky": "2.3.0",
@@ -41,6 +43,11 @@
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "release-it": {
+    "github": {
+      "release": true
     }
   }
 }

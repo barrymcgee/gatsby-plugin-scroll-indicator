@@ -49,7 +49,7 @@
   "release-it": {
     "github": {
       "release": true,
-      "pushRepo": "upstream"
+      "pushRepo": "https://github.com/barrymcgee/gatsby-plugin-scroll-indicator"
     }
   }
 }

@@ -1,27 +1,34 @@
 import multimatch from 'multimatch';
 
-const defaultOptions = { color: `#663391`, paths: [`**`] };
+const defaultOptions = {
+  color: `#663391`,
+  paths: [`**`],
+};
 
 exports.onClientEntry = (a, pluginOptions = {}) => {
   exports.onRouteUpdate = ({ location }) => {
     // Merge default options with user defined options in `gatsby-config.js`
-    const options = { ...defaultOptions, ...pluginOptions };
+    const options = {
+      ...defaultOptions,
+      ...pluginOptions,
+    };
 
     // Check current path with specified paths in options
     const matchedPaths = multimatch(location.pathname, options.paths);
     // Return bool if paths match
     const enableScroller = matchedPaths.length > 0;
 
-    if (enableScroller) {
-      // Create indicator container and append to document body
-      const node = document.createElement(`div`);
-      node.id = `gatsby-plugin-scroll-indicator`;
-      document.body.appendChild(node);
+    // Create indicator container and append to document body
+    const node = document.createElement(`div`);
+    node.id = `gatsby-plugin-scroll-indicator`;
 
+    // check if viewport already has a scroll indicator
+    const indicatorPresent = document.querySelector(`#${node.id}`);
+
+    if (enableScroller && !indicatorPresent) {
+      document.body.appendChild(node);
       let scrolling = false;
-      const indicator = document.getElementById(
-        'gatsby-plugin-scroll-indicator'
-      );
+      const indicator = document.getElementById(node.id);
       // Determine width of scroll indicator
       const getIndicatorPercentageWidth = (currentPos, totalScroll) => {
         return Math.floor((currentPos / totalScroll) * 100);

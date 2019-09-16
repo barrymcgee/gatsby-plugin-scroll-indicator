@@ -60,9 +60,7 @@ exports.onClientEntry = (a, pluginOptions = {}) => {
               );
               indicator.setAttribute(
                 'style',
-                `width: ${indicatorWidth}%;position: fixed;height: 3px;background-color: ${
-                  options.color
-                };top: 0;left: 0;transition:width 0.25s`
+                `width: ${indicatorWidth}%;position: fixed;height: 3px;background-color: ${options.color};top: 0;left: 0;transition:width 0.25s`
               );
               scrolling = false;
             });

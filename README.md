@@ -29,11 +29,19 @@ These options are not required. To have a Gatsby purple (`#663391`) scroll indic
 
 Any [hex color code](https://www.color-hex.com/) is valid.
 
+If not provided, the default hex code is Gatsby purple (`#663391`).
+
 ### paths (Array of globbing patterns)
 
 An array of [globbing patterns](http://www.globtester.com/) to specify where the scroll indicator should show.
 
-Note: By default, the indicator will show for all paths.
+If not provided, the indicator will show for all paths.
+
+### zIndex (String)
+
+The z-index option specifies the stack order of the indicator element.
+
+If not provided, the default value is `9999`.
 
 ## Example
 
@@ -47,6 +55,8 @@ plugins: [
       color: '#BADA55',
       // Configure paths where the scroll indicator will appear
       paths: ['/', '/blog/**'],
+      // Configure the z-index of the indicator element
+      zIndex: 9999,
     },
   },
 ];

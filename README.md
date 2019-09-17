@@ -56,7 +56,7 @@ plugins: [
       // Configure paths where the scroll indicator will appear
       paths: ['/', '/blog/**'],
       // Configure the z-index of the indicator element
-      zIndex: 9999,
+      zIndex: `9999`,
     },
   },
 ];

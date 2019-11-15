@@ -36,7 +36,7 @@
     "@babel/cli": "7.7.0",
     "release-it": "12.4.3",
     "@babel/core": "7.7.2",
-    "babel-preset-gatsby-package": "0.2.10",
+    "babel-preset-gatsby-package": "0.2.11",
     "husky": "3.0.9",
     "prettier": "1.19.1",
     "pretty-quick": "1.11.1"

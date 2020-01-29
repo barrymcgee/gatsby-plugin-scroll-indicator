@@ -5,7 +5,7 @@
 
 - 🔥 Easily add a page scroll indicator to your Gatsby site.
 - 👨🏼‍💻A 3px high indicator bar will progress along the top of your viewport as you scroll down the page.
-- 🎨 The color is of the indicator bar is a configurable option.
+- 🎨 The color, height, paths and z-index of the indicator bar are all configurable options.
 
 ## Install
 
@@ -13,7 +13,7 @@
 
 ## Quick start
 
-These options are not required. To have a Gatsby purple (`#663391`) scroll indicator on all of your pages, add the plugin to your plugins array in `gatsby-config.js`:
+These options are not required. To have a 3px high, Gatsby purple (`#663391`) scroll indicator on all of your pages, add the plugin to your plugins array in `gatsby-config.js`:
 
 ```javascript
   ...
@@ -30,6 +30,12 @@ These options are not required. To have a Gatsby purple (`#663391`) scroll indic
 Any [hex color code](https://www.color-hex.com/) is valid.
 
 If not provided, the default hex code is Gatsby purple (`#663391`).
+
+### height (String)
+
+The height of the scroll indicator, in pixels.
+
+If not provided, the default height is `3px`.
 
 ### paths (Array of globbing patterns)
 
@@ -52,7 +58,9 @@ plugins: [
     resolve: `gatsby-plugin-scroll-indicator`,
     options: {
       // Configure color of the scroll indicator
-      color: '#BADA55',
+      color: '#663391',
+      // Height of the scroll indicator
+      height: '3px',
       // Configure paths where the scroll indicator will appear
       paths: ['/', '/blog/**'],
       // Configure the z-index of the indicator element

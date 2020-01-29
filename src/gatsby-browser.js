@@ -2,6 +2,7 @@ import multimatch from 'multimatch';
 
 const defaultOptions = {
   color: `#663391`,
+  height: `3px`,
   paths: [`**`],
   zIndex: `9999`,
 };
@@ -61,7 +62,7 @@ exports.onClientEntry = (a, pluginOptions = {}) => {
               );
               indicator.setAttribute(
                 'style',
-                `width: ${indicatorWidth}%;position: fixed;height: 3px;background-color: ${options.color};top: 0;left: 0;transition:width 0.25s;z-index: ${options.zIndex}`
+                `width: ${indicatorWidth}%;position: fixed;height: ${options.height};background-color: ${options.color};top: 0;left: 0;transition:width 0.25s;z-index: ${options.zIndex}`
               );
               scrolling = false;
             });

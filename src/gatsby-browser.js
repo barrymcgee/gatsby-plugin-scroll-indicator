@@ -60,10 +60,17 @@ exports.onClientEntry = (a, pluginOptions = {}) => {
                 currentPos,
                 scrollDistance
               );
-              indicator.setAttribute(
-                'style',
-                `width: ${indicatorWidth}%;position: fixed;height: ${options.height};background: ${options.color};top: 0;left: 0;transition:width 0.25s;z-index: ${options.zIndex}`
-              );
+              const { color, height, zIndex } = options;
+              indicator.style.cssText = `
+                background: ${color};
+                height: ${height};
+                left: 0;
+                position: fixed;
+                top: 0;
+                width: ${indicatorWidth}%;
+                transition: width 0.25s;
+                z-index: ${zIndex};
+              `;
               scrolling = false;
             });
             scrolling = true;

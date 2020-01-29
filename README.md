@@ -27,9 +27,15 @@ These options are not required. To have a 3px high, Gatsby purple (`#663391`) sc
 
 ### color (String)
 
-Any [hex color code](https://www.color-hex.com/) is valid.
+Any solid [hex color code](https://www.color-hex.com/) is valid. e.g.
 
-If not provided, the default hex code is Gatsby purple (`#663391`).
+`color: #663391`
+
+This option will accept any valid value for the [background CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/background).
+
+If not provided, the default value is Gatsby purple themed [CSS gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients):
+
+`linear-gradient(to right, #CC99F7, #663391)`
 
 ### height (String)
 

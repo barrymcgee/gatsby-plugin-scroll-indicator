@@ -31,32 +31,9 @@ jobs:
       - run:
           name: Build assets
           command: npm build
-  deploy:
-    <<: *defaults
-    steps:
-      - checkout
-      - run:
-          name: Install deps
-          command: npm install
-      - run:
-          name: Build assets
-          command: npm build
-      - run:
-          name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-      - run:
-          name: Publish package
-          command: npm publish
-
 workflows:
   version: 2
   test-deploy:
     jobs:
       - prettier-check
       - build
-      - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only: master

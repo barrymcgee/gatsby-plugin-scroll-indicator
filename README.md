@@ -79,4 +79,4 @@ plugins: [
 ### Useful links
 
 - Globbing patterns, explained - https://commandbox.ortusbooks.com/usage/parameters/globbing-patterns
-- Globtester - http://www.globtester.com/
+- Globtester - https://globster.xyz/

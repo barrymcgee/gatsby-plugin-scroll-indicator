@@ -33,9 +33,9 @@
     "multimatch": "4.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.10.5",
+    "@babel/cli": "7.11.5",
     "release-it": "12.6.3",
-    "@babel/core": "7.11.4",
+    "@babel/core": "7.11.5",
     "babel-preset-gatsby-package": "0.5.2",
     "husky": "4.2.5",
     "prettier": "1.19.1",

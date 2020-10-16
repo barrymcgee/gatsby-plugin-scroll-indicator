@@ -35,7 +35,7 @@
   "devDependencies": {
     "@babel/cli": "7.12.1",
     "release-it": "12.6.3",
-    "@babel/core": "7.12.1",
+    "@babel/core": "7.12.3",
     "babel-preset-gatsby-package": "0.5.3",
     "husky": "4.3.0",
     "prettier": "1.19.1",

@@ -37,7 +37,7 @@
     "release-it": "12.6.3",
     "@babel/core": "7.12.9",
     "babel-preset-gatsby-package": "0.8.0",
-    "husky": "4.3.4",
+    "husky": "5.0.4",
     "prettier": "1.19.1",
     "pretty-quick": "2.0.2"
   },

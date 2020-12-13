@@ -38,7 +38,7 @@
     "@babel/core": "7.12.10",
     "babel-preset-gatsby-package": "0.8.0",
     "husky": "4.3.6",
-    "prettier": "1.19.1",
+    "prettier": "2.2.1",
     "pretty-quick": "2.0.2"
   },
   "husky": {

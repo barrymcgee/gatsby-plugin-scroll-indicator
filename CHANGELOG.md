@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+<a name="1.0.1"></a>
+
+## [1.0.1]() (2020-12-16)
+
+**Note:**
+[fix] Update dependencies
+
+<a name="1.0.0"></a>
+
+## [1.0.0]() (2020-01-29)
+
+**Note:**
+[feat] Added ability to add custom background color
+[feat] Add height as a config option
+
 <a name="0.0.8"></a>
 
 ## [0.0.8]() (2019-02-21)

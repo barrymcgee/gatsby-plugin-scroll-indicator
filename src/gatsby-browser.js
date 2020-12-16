@@ -1,4 +1,4 @@
-import multimatch from 'multimatch';
+import multimatch from "multimatch";
 
 const defaultOptions = {
   color: `linear-gradient(to right, #CC99F7, #663391)`,
@@ -49,13 +49,13 @@ exports.onClientEntry = (a, pluginOptions = {}) => {
           );
         };
         // Add throttled listener to update on scroll
-        window.addEventListener('scroll', function() {
+        window.addEventListener("scroll", function () {
           let currentPos = window.scrollY,
             innerHeight = window.innerHeight,
             scrollHeight = getScrollHeight(),
             scrollDistance = scrollHeight - innerHeight;
           if (!scrolling) {
-            window.requestAnimationFrame(function() {
+            window.requestAnimationFrame(function () {
               let indicatorWidth = getIndicatorPercentageWidth(
                 currentPos,
                 scrollDistance
@@ -80,7 +80,7 @@ exports.onClientEntry = (a, pluginOptions = {}) => {
     } else {
       // Try to assign scrollIndicator if it is already attached to the DOM
       const scrollIndicator = document.querySelector(
-        '#gatsby-plugin-scroll-indicator'
+        "#gatsby-plugin-scroll-indicator"
       );
       // If the indicator is already attached to the DOM, remove it
       if (scrollIndicator) {

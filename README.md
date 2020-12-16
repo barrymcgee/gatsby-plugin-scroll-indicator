@@ -64,11 +64,11 @@ plugins: [
     resolve: `gatsby-plugin-scroll-indicator`,
     options: {
       // Configure color of the scroll indicator
-      color: '#663391',
+      color: "#663391",
       // Height of the scroll indicator
-      height: '3px',
+      height: "3px",
       // Configure paths where the scroll indicator will appear
-      paths: ['/', '/blog/**'],
+      paths: ["/", "/blog/**"],
       // Configure the z-index of the indicator element
       zIndex: `9999`,
     },

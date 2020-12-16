@@ -7,7 +7,7 @@ const defaultOptions = {
   zIndex: `9999`,
 };
 
-exports.onClientEntry = (a, pluginOptions = {}) => {
+exports.onClientEntry = (_, pluginOptions = {}) => {
   exports.onRouteUpdate = ({ location }) => {
     // Merge default options with user defined options in `gatsby-config.js`
     const options = {

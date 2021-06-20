@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@babel/cli": "7.14.5",
-    "release-it": "14.9.0",
+    "release-it": "14.10.0",
     "@babel/core": "7.14.6",
     "babel-preset-gatsby-package": "0.12.0",
     "husky": "4.3.8",

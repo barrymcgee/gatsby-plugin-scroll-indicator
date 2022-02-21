@@ -33,7 +33,7 @@
     "multimatch": "5.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.17.3",
+    "@babel/cli": "7.17.6",
     "release-it": "14.12.4",
     "@babel/core": "7.17.5",
     "babel-preset-gatsby-package": "0.12.0",

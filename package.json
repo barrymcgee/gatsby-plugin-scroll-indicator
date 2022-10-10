@@ -29,7 +29,7 @@
     "release": "release-it"
   },
   "dependencies": {
-    "@babel/runtime": "7.19.0",
+    "@babel/runtime": "7.19.4",
     "multimatch": "5.0.0"
   },
   "devDependencies": {

@@ -29,13 +29,13 @@
     "release": "release-it"
   },
   "dependencies": {
-    "@babel/runtime": "7.20.1",
+    "@babel/runtime": "7.20.6",
     "multimatch": "5.0.0"
   },
   "devDependencies": {
     "@babel/cli": "7.19.3",
     "release-it": "14.14.3",
-    "@babel/core": "7.20.2",
+    "@babel/core": "7.20.5",
     "babel-preset-gatsby-package": "0.12.0",
     "husky": "7.0.4",
     "prettier": "2.8.0",

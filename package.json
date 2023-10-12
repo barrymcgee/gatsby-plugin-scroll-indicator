@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@babel/runtime": "7.23.2",
-    "multimatch": "5.0.0"
+    "multimatch": "6.0.0"
   },
   "devDependencies": {
     "@babel/cli": "7.23.0",

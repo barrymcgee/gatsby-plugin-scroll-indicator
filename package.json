@@ -29,11 +29,11 @@
     "release": "release-it"
   },
   "dependencies": {
-    "@babel/runtime": "7.25.4",
+    "@babel/runtime": "7.25.6",
     "multimatch": "5.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.24.8",
+    "@babel/cli": "7.25.6",
     "release-it": "14.14.3",
     "@babel/core": "7.25.2",
     "babel-preset-gatsby-package": "0.12.0",
